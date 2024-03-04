@@ -1,0 +1,132 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* Animation */
+  --snap-time: 0.1s;
+
+  --max-section-content-width: 1200px;
+
+  /* Colors */
+  --black: #000000ff;
+  --white: #ffffffff;
+  --bad: #ff2e00ff;
+  --unfinished: rgb(131, 108, 197);
+  --good: #388659ff;
+  --info: rgb(96, 96, 96);
+
+  /* Fonts */
+  --h1-font-size: 2.5em;
+  --h2-font-size: 2em;
+  --h3-font-size: 1.5em;
+  --h4-font-size: 1.2em;
+  --h5-font-size: 1em;
+  --h6-font-size: 0.8em;
+  --p-font-size: 1em;
+  --a-font-size: 1em;
+  --button-font-size: 1em;
+  --input-font-size: 1em;
+  --label-font-size: 1em;
+  --small-font-size: 0.8em;
+
+  --font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  --extra-small-padding: 4px;
+  --small-padding: 8px;
+  --medium-padding: 16px;
+  --large-padding: 32px;
+}
+
+h1 {
+  font-size: var(--h1-font-size);
+}
+
+h2 {
+  font-size: var(--h2-font-size);
+}
+
+h3 {
+  font-size: var(--h3-font-size);
+}
+
+h4 {
+  font-size: var(--h4-font-size);
+}
+
+h5 {
+  font-size: var(--h5-font-size);
+}
+
+h6 {
+  font-size: var(--h6-font-size);
+}
+
+p {
+  font-size: var(--p-font-size);
+}
+
+a {
+  font-size: var(--a-font-size);
+}
+
+button {
+  font-size: var(--button-font-size);
+}
+
+input {
+  font-size: var(--input-font-size);
+}
+
+label {
+  font-size: var(--label-font-size);
+}
+
+small {
+  font-size: var(--small-font-size);
+}
+
+li {
+  font-size: var(--p-font-size);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: var(--black);
+  min-height: calc(100vh - 16px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 8px;
+  font-family: var(--font-family);
+  line-height: 1.6;
+  color: var(--white);
+  scroll-snap-type: y proximity;
+  overflow-y: hidden;
+  max-height: 100vh;
+}
+
+
+footer {
+  padding: 20px;
+  font-size: var(--small-font-size);
+  border-top: 1px solid var(--info);
+}
+
+li {
+  color: var(--white);
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--info);
+  text-decoration: none;
+}

@@ -1,0 +1,41 @@
+{
+  "name": "svelte-express-starter",
+  "version": "1.0.0",
+  "description": "Boilerplate code to create a svelte/express site",
+  "main": "server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && nodemon server.js",
+    "client": "cd client && npm run dev",
+    "build": "cd client && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GBI-liam/svelte-express-starter.git"
+  },
+  "keywords": [
+    "svelte",
+    "express",
+    "mpa",
+    "spa"
+  ],
+  "author": "Liam McGoldrick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GBI-liam/svelte-express-starter/issues"
+  },
+  "homepage": "https://github.com/GBI-liam/svelte-express-starter#readme",
+  "dependencies": {
+    "@google-cloud/secret-manager": "^5.1.0",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2",
+    "http-proxy-middleware": "^2.0.6"
+
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "dotenv": "^16.3.1",
+    "nodemon": "^2.0.22",
+    "vite": "^3.2.7"
+	}
+}
